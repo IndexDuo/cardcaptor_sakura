@@ -1,0 +1,120 @@
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.svg-image {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: black;
+}
+body {
+  background-color: black;
+}
+
+@keyframes magic-circle-animation {
+  0% {
+    opacity: 0;
+    transform: translate(40%, 40%) scale(0.2);
+    filter: brightness(50%);
+  }
+  25% {
+    opacity: 1;
+    transform: translate(25%, 25%) scale(0.5);
+    filter: brightness(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0%) scale(1);
+    filter: brightness(100%);
+  }
+}
+
+@keyframes magic-circle-animation-dash {
+  0% {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 1000;
+    filter: none;
+  }
+  100% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+    filter: none;
+  }
+}
+
+#Exclude {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: magic-circle-animation-dash 3s linear forwards infinite;
+}
+
+#outer-circle1 {
+  opacity: 0;
+  transform: translate(0%, 0%) scale(0.5);
+  filter: brightness(100%);
+  animation: magic-circle-animation 0.75s linear forwards;
+}
+
+#outer-circle2 {
+  opacity: 0;
+  transform: translate(0%, 0%) scale(0.5);
+  filter: brightness(100%);
+  animation: magic-circle-animation 0.75s linear forwards;
+  animation-delay: 0.7s;
+}
+
+#outer-circle3 {
+  transform-origin: center;
+  animation: spin-animation 5s linear infinite;
+  animation-delay: 0.8s;
+}
+
+#outer-circle4 {
+  transform-origin: center;
+  animation: spin-animation 5s linear infinite;
+  animation-delay: 0.8s;
+}
+#small-lines {
+  transform-origin: center;
+  animation: spin-animation 5s linear infinite;
+  animation-delay: 0.8s;
+}
+
+#smaller-set {
+  transform-origin: center;
+  animation: spin-animation-left 5s linear infinite;
+  animation-delay: 0.8s;
+}
+
+.glow {
+  animation: glow-animation 15s ease-in-out infinite alternate;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-animation-left {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes glow-animation {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(2);
+  }
+}
