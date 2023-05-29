@@ -54,15 +54,21 @@ body {
   opacity: 0;
   transform: translate(0%, 0%) scale(0.5);
   filter: brightness(100%);
-  /* animation: magic-circle-animation 0.75s linear forwards; */
+  animation: magic-circle-animation 0.75s linear forwards;
+  animation-delay: 0.8s;
+  /* transform-origin: center;
+  animation: spin-animation 5s linear infinite; */
 }
 
 #outer-circle2 {
-  opacity: 0;
+  /* opacity: 0;
   transform: translate(0%, 0%) scale(0.5);
   filter: brightness(100%);
   animation: magic-circle-animation 0.75s linear forwards;
-  animation-delay: 0.7s;
+  animation-delay: 0.7s; */
+  transform-origin: center;
+  animation: spin-animation 5s linear infinite;
+  animation-delay: 0.8s;
 }
 
 #outer-circle3 {
