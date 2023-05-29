@@ -54,14 +54,16 @@ body {
   opacity: 0;
   transform: translate(0%, 0%) scale(0.5);
   filter: brightness(100%);
-  animation: magic-circle-animation 0.75s linear forwards;
+  /* animation: magic-circle-animation 0.75s linear forwards; */
+  animation: spin-animation 5s linear infinite;
 }
 
 #outer-circle2 {
   opacity: 0;
-  transform: translate(0%, 0%) scale(0.5);
+  /* transform: translate(0%, 0%) scale(0.5); */
   filter: brightness(100%);
-  animation: magic-circle-animation 0.75s linear forwards;
+  /* animation: magic-circle-animation 0.75s linear forwards; */
+  animation: spin-animation 5s linear infinite;
   animation-delay: 0.7s;
 }
 
