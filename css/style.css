@@ -59,6 +59,12 @@ body {
   /* transform-origin: center;
   animation: spin-animation 5s linear infinite; */
 }
+#outer-circle1.complete {
+  animation-name: spin-animation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
 #outer-circle2 {
   /* opacity: 0;
