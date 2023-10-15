@@ -1,1 +1,1 @@
-# [cardcaptor_sakura](https://indexdduo.github.io/cardcaptor_sakura/)
+# [cardcaptor_sakura](https://indexduo.me/cardcaptor_sakura/)
