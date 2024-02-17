@@ -59,22 +59,28 @@ body {
   /* transform-origin: center;
   animation: spin-animation 5s linear infinite; */
 }
+
 #outer-circle1.complete {
-  animation-name: spin-animation;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  opacity: 100;
+  transform-origin: center;
+  animation: spin-animation 5s linear infinite;
 }
 
 #outer-circle2 {
-  /* opacity: 0;
+  opacity: 0;
   transform: translate(0%, 0%) scale(0.5);
   filter: brightness(100%);
   animation: magic-circle-animation 0.75s linear forwards;
-  animation-delay: 0.7s; */
+  animation-delay: 0.7s;
+  /* transform-origin: center;
+  animation: spin-animation 5s linear infinite;
+  animation-delay: 0.8s; */
+}
+
+#outer-circle2.complete {
+  opacity: 100;
   transform-origin: center;
   animation: spin-animation 5s linear infinite;
-  animation-delay: 0.8s;
 }
 
 #outer-circle3 {
